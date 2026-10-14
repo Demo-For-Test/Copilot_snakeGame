@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Snake — Play in your browser</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="ui">
+    <h1>Snake</h1>
+    <div id="controls">
+      <button id="startBtn">Start</button>
+      <button id="pauseBtn" disabled>Pause</button>
+      <button id="restartBtn">Restart</button>
+    </div>
+    <div id="scoreboard">Score: <span id="score">0</span> — High: <span id="high">0</span></div>
+  </div>
+
+  <canvas id="game" width="600" height="400"></canvas>
+
+  <div id="help">Use arrow keys to move. Space to pause. The game saves your high score in the browser.</div>
+
+  <script src="snake.js"></script>
+</body>
+</html>
