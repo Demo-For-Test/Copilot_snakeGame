@@ -1,0 +1,92 @@
+/* Simple styling for the browser Snake game (docs/style.css) */
+:root {
+  --bg: #0b1020;
+  --panel: #121a2b;
+  --text: #eaf2ff;
+  --accent: #7ef29a;
+  --accent-2: #5ad1ff;
+  --warning: #ffd166;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at top, #16213e, var(--bg));
+  color: var(--text);
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: min(92vw, 760px);
+  background: rgba(18, 26, 43, 0.92);
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 18px 18px 14px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+h1 {
+  margin: 0 0 10px;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.06em;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+button {
+  background: var(--accent-2);
+  color: #041018;
+  border: none;
+  border-radius: 9px;
+  padding: 9px 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button:hover:enabled {
+  filter: brightness(1.06);
+}
+
+canvas {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+  background: #000;
+  border: 2px solid rgba(255,255,255,0.12);
+  border-radius: 8px;
+}
+
+.info {
+  text-align: center;
+  color: #d3dff5;
+  margin-top: 12px;
+  font-size: 0.95rem;
+}
+
+#ui { text-align: center; }
